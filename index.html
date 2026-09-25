@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="What Heartbridge for iPhone keeps on your iPhone, what it sends to OpenAI, and when.">
+<title>Heartbridge Privacy</title>
+<style>
+  :root {
+    --paper: #f7f3ec;
+    --ink: #2b2723;
+    --quiet: #5f574f;
+    --rule: #ddd4c7;
+    --accent: #8a4a36;
+    --well: #efe8dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1b1a19;
+      --ink: #ece6dc;
+      --quiet: #b9b0a4;
+      --rule: #3a3632;
+      --accent: #e0a58c;
+      --well: #25231f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-weight: 400; font-size: 2.4rem; line-height: 1.15; margin: 0 0 0.4rem; }
+  h2 { font-weight: 400; font-size: 1.45rem; margin: 2.6rem 0 0.6rem; }
+  p, li { margin: 0 0 1rem; }
+  ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+  .meta { color: var(--quiet); font-size: 1rem; margin-bottom: 2rem; }
+  .said {
+    background: var(--well);
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.1rem 0.1rem;
+    margin: 0 0 1.4rem;
+  }
+  .said p { color: var(--quiet); }
+  a { color: var(--accent); text-underline-offset: 0.15em; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.6rem 0 1.4rem; }
+  footer { color: var(--quiet); font-size: 1rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Heartbridge Privacy</h1>
+<p class="meta">Heartbridge for iPhone. Last updated 25 September 2026.</p>
+
+<p>Heartbridge is a private writing room. You write an Entry, choose Finish Entry, and, if you ask for one, a Painting is made from your words. This page says what the app keeps, what it sends, and to whom. It says the same thing as the Privacy page and Help inside the app.</p>
+
+<h2>In short</h2>
+<p>These are the words of the Privacy page inside Heartbridge (Settings, then Help, then Privacy):</p>
+<div class="said">
+<p>Your Entries, Draft and Paintings stay in Heartbridge’s folder on this iPhone. They can be included in the iPhone’s backup. Heartbridge does not add its own encryption to these files.</p>
+<p>When you choose Create Painting, Repaint or Try Again with an OpenAI key, the Entry’s words are sent to OpenAI. Paint Each Entry also sends them when you use Finish Entry. A Painting that was not sent can resume when Heartbridge opens again. OpenAI handles these requests under its own terms and data policies.</p>
+<p>Save and Check sends your key to OpenAI to check access. It sends no Entry words. Your key is kept in this iPhone’s Keychain. Remove Key stops new requests with that key; it cannot recall a request already sent.</p>
+<p>Widgets receive the newest wordless Painting, kept days and Room colors. They receive no Entry words. Your Hour uses a local notification and contains no Entry words.</p>
+<p>Heartbridge has no advertising or tracking. Delete removes an Entry from this app after the change is saved. It does not remove copies from earlier iPhone backups or a request already sent to OpenAI.</p>
+</div>
+
+<h2>What stays on your iPhone</h2>
+<ul>
+<li>Your Entries, your Draft, your Paintings and your settings are kept in Heartbridge’s own folder on your iPhone.</li>
+<li>They can be included in your iPhone’s backup (iCloud Backup or a computer backup), the same as other app files. Heartbridge does not add its own encryption to these files.</li>
+<li>Search looks through Entries on your iPhone. It sends nothing anywhere.</li>
+<li>Heartbridge has no account, no sign-in, and no server of its own. The maker of Heartbridge does not receive your Entries, your Paintings or your key.</li>
+</ul>
+
+<h2>What goes to OpenAI, and when</h2>
+<p>OpenAI is the only outside service Heartbridge talks to. It makes Paintings. Nothing is sent to OpenAI unless you have added your own OpenAI key. Help in the app says:</p>
+<div class="said">
+<p>With an OpenAI key, Create Painting, Repaint and Try Again send the Entry’s words to OpenAI. Paint Each Entry also sends them when you use Finish Entry. A Painting that was not sent can resume when Heartbridge opens again. Save and Check sends only the key to check access. Sample Paintings send nothing.</p>
+</div>
+<p>Paint Each Entry is off until you turn it on. Saving a key does not turn it on. Beside the switch, before you turn it on, the app says:</p>
+<div class="said">
+<p>When this is on, Finish Entry sends the Entry’s words to OpenAI to make a Painting. Sample Paintings stay on this iPhone.</p>
+</div>
+<p>So words leave your iPhone only at these moments:</p>
+<ul>
+<li><strong>Finish Entry</strong>, when Paint Each Entry is on.</li>
+<li><strong>Create Painting</strong>, <strong>Repaint</strong> or <strong>Try Again</strong>, when you tap one of them.</li>
+<li><strong>When Heartbridge opens again</strong>, for a Painting you already asked for that had not yet been sent.</li>
+</ul>
+<p>What one Painting request carries: the whole Entry, word for word, inside Heartbridge’s painting instructions; the name of the painting model, the picture size and quality; and your key, so OpenAI knows the request is yours. It is sent over a secure (HTTPS) connection to OpenAI’s address, api.openai.com. It does not carry the Entry’s date, number or Room, or your name. Like any internet request, it also shows OpenAI your network address and the basic app and iPhone system details that iPhone adds.</p>
+<p>A request already on its way can finish while Heartbridge is closed. While it travels, its words wait in a temporary file on your iPhone, which is removed when the request ends. What comes back is a Painting, which is kept with the Entry on your iPhone. Heartbridge asks OpenAI for a wordless picture.</p>
+<p>OpenAI handles these requests under its own terms and data policies, including how long it keeps them. You can read them at <a href="https://openai.com/policies/">openai.com/policies</a>. Heartbridge sends Entry words to OpenAI only to make the Painting you asked for. Because the key is yours, the requests belong to your OpenAI account.</p>
+
+<h2>Your OpenAI key</h2>
+<ul>
+<li>Save and Check sends your key to OpenAI to check that it works. It sends no Entry words and does not turn on Paint Each Entry.</li>
+<li>Your key is kept in this iPhone’s Keychain. It is not synced to iCloud Keychain and does not move to a new iPhone.</li>
+<li>Remove Key deletes it from the Keychain and stops new requests with that key. It cannot recall a request already sent.</li>
+</ul>
+
+<h2>Widgets, the Lock Screen and Your Hour</h2>
+<ul>
+<li>Widgets receive the newest wordless Painting, kept days and Room colors. They receive no Entry words.</li>
+<li>While a Painting develops and you are away from the app, the Lock Screen and Dynamic Island may show it developing in the Room’s colors. They show no words.</li>
+<li>Your Hour is one local reminder a day, made on your iPhone. It says only that the Room is ready and contains no Entry words.</li>
+</ul>
+
+<h2>No advertising, no tracking</h2>
+<p>Heartbridge has no advertising, no analytics and no tracking. It does not share data with data brokers and does not follow you across other apps or websites.</p>
+<p>Apple may pass crash reports to the maker if you have chosen to share analytics with app developers in your iPhone’s settings. Those come from Apple, not from Heartbridge. In TestFlight, feedback you choose to send goes through Apple with anything you attach, such as a screenshot.</p>
+
+<h2>Keeping, stopping and removing</h2>
+<ul>
+<li>Entries and Paintings stay on your iPhone until you delete them. Delete removes an Entry from this app after the change is saved. It does not remove copies from earlier iPhone backups or a request already sent to OpenAI.</li>
+<li>To stop sending words, turn off Paint Each Entry, or use Remove Key to stop all Painting requests.</li>
+<li>Deleting Heartbridge from your iPhone removes its folder. Use Remove Key first to be sure the key is gone as well.</li>
+<li>For requests already sent to OpenAI, use your OpenAI account and OpenAI’s policies.</li>
+</ul>
+
+<h2>Sample Paintings</h2>
+<p>A preview of Heartbridge may open with sample Entries and sample Paintings. They are kept on your iPhone. Nothing is sent anywhere to make them.</p>
+
+<h2>Changes</h2>
+<p>If what Heartbridge keeps or sends changes, this page and the Privacy page inside the app will change with it, and the date at the top will move.</p>
+
+<hr>
+<footer>
+<p>Questions about this policy: use Send Beta Feedback in TestFlight, or the Support link on Heartbridge’s App Store page.</p>
+</footer>
+</main>
+</body>
+</html>

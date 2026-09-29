@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<meta name="description" content="What Heartbridge for iPhone keeps on your iPhone, what it sends to OpenAI, and when.">
+<meta name="description" content="What Heartbridge for Mac, iPhone and iPad keeps on your device, what it sends to the painting service you choose, and when.">
 <title>Heartbridge Privacy</title>
 <style>
   :root {
@@ -38,6 +38,7 @@
   main { max-width: 40rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
   h1 { font-weight: 400; font-size: 2.4rem; line-height: 1.15; margin: 0 0 0.4rem; }
   h2 { font-weight: 400; font-size: 1.45rem; margin: 2.6rem 0 0.6rem; }
+  h3 { font-weight: 400; font-size: 1.2rem; font-style: italic; margin: 1.8rem 0 0.4rem; }
   p, li { margin: 0 0 1rem; }
   ul { padding-left: 1.2rem; margin: 0 0 1rem; }
   .meta { color: var(--quiet); font-size: 1rem; margin-bottom: 2rem; }
@@ -48,7 +49,11 @@
     margin: 0 0 1.4rem;
   }
   .said p { color: var(--quiet); }
-  a { color: var(--accent); text-underline-offset: 0.15em; }
+  .device { font-variant: small-caps; letter-spacing: 0.04em; color: var(--quiet); }
+  table { width: 100%; border-collapse: collapse; margin: 0 0 1.4rem; font-size: 1rem; }
+  th, td { text-align: left; vertical-align: top; padding: 0.45rem 0.5rem 0.45rem 0; border-bottom: 1px solid var(--rule); }
+  th { font-weight: 400; color: var(--quiet); }
+  a { color: var(--accent); text-underline-offset: 0.15em; overflow-wrap: anywhere; }
   hr { border: 0; border-top: 1px solid var(--rule); margin: 2.6rem 0 1.4rem; }
   footer { color: var(--quiet); font-size: 1rem; }
 </style>
@@ -56,30 +61,48 @@
 <body>
 <main>
 <h1>Heartbridge Privacy</h1>
-<p class="meta">Heartbridge for iPhone. Last updated 25 September 2026.</p>
+<p class="meta">Heartbridge for Mac, iPhone and iPad. Last updated 29 September 2026.</p>
 
-<p>Heartbridge is a private writing room. You write an Entry, choose Finish Entry, and, if you ask for one, a Painting is made from your words. This page says what the app keeps, what it sends, and to whom. It says the same thing as the Privacy page and Help inside the app.</p>
+<p>Heartbridge is a private writing room. You write an Entry, choose Finish Entry, and, if you ask for one, a Painting is made from your words. This page says what the app keeps, what it sends, and to whom. It covers Heartbridge on Mac, iPhone and iPad. Where they behave the same, it says so once. Where one differs, it says which.</p>
 
-<h2>In short</h2>
-<p>These are the words of the Privacy page inside Heartbridge (Settings, then Help, then Privacy):</p>
-<div class="said">
-<p>Your Entries, Draft and Paintings stay in Heartbridge’s folder on this iPhone. They can be included in the iPhone’s backup. Heartbridge does not add its own encryption to these files.</p>
-<p>When you choose Create Painting, Repaint or Try Again with an OpenAI key, the Entry’s words are sent to OpenAI. Paint Each Entry also sends them when you use Finish Entry. A Painting that was not sent can resume when Heartbridge opens again. OpenAI handles these requests under its own terms and data policies.</p>
-<p>Save and Check sends your key to OpenAI to check access. It sends no Entry words. Your key is kept in this iPhone’s Keychain. Remove Key stops new requests with that key; it cannot recall a request already sent.</p>
-<p>Widgets receive the newest wordless Painting, kept days and Room colors. They receive no Entry words. Your Hour uses a local notification and contains no Entry words.</p>
-<p>Heartbridge has no advertising or tracking. Delete removes an Entry from this app after the change is saved. It does not remove copies from earlier iPhone backups or a request already sent to OpenAI.</p>
-</div>
-
-<h2>What stays on your iPhone</h2>
+<h2>Your data</h2>
 <ul>
-<li>Your Entries, your Draft, your Paintings and your settings are kept in Heartbridge’s own folder on your iPhone.</li>
-<li>They can be included in your iPhone’s backup (iCloud Backup or a computer backup), the same as other app files. Heartbridge does not add its own encryption to these files.</li>
-<li>Search looks through Entries on your iPhone. It sends nothing anywhere.</li>
-<li>Heartbridge has no account, no sign-in, and no server of its own. The maker of Heartbridge does not receive your Entries, your Paintings or your key.</li>
+<li>Your Entries, Drafts and Paintings stay on the device you wrote them on, in Heartbridge’s own folder. Heartbridge does not sync them between your devices.</li>
+<li>Heartbridge has no account, no sign-in, and no server of its own. The maker of Heartbridge does not receive your Entries, your Paintings or your keys.</li>
+<li>Paintings are optional. Your words leave your device only to make a Painting, only to the painting service whose key you added, and only after you have turned painting on or asked for a Painting.</li>
+<li>Your painting key is kept in the device’s Keychain. It is never put in iCloud Keychain.</li>
+<li>Heartbridge has no advertising, analytics or tracking of its own.</li>
+<li>Heartbridge does not add its own encryption to your files. They can be included in your device’s backups.</li>
 </ul>
 
-<h2>What goes to OpenAI, and when</h2>
-<p>OpenAI is the only outside service Heartbridge talks to. It makes Paintings. Nothing is sent to OpenAI unless you have added your own OpenAI key. Help in the app says:</p>
+<h2>What stays on your device</h2>
+<ul>
+<li>Your Entries, your Drafts, your Paintings and your settings are kept in Heartbridge’s own folder on the device where you wrote them.</li>
+<li><span class="device">Mac:</span> the folder is in your Mac’s Library. Settings, then Your Entries, shows where, and Reveal in Finder opens it. Time Machine and other backups of your Mac can include it.</li>
+<li><span class="device">iPhone and iPad:</span> the folder can be included in the device’s backup (iCloud Backup or a computer backup), the same as other app files.</li>
+<li>Search looks through Entries on your device. It sends nothing anywhere.</li>
+<li>Heartbridge does not sync. An Entry written on your Mac stays on your Mac; one written on your iPhone stays on your iPhone.</li>
+</ul>
+
+<h2>Copies you make</h2>
+<ul>
+<li><span class="device">Mac and iPad:</span> Export and Back Up write copies of your Entries, and their Paintings, to a folder you choose. Those copies are ordinary files, not encrypted by Heartbridge, and they stay wherever you put them. Backups never include your painting keys. On iPad, audio files for Music are not included either.</li>
+<li><span class="device">Mac and iPad:</span> Restore keeps a safety copy of your journal as it was, in Heartbridge’s folder. On Mac, if the journal ever cannot be opened, Heartbridge also sets it aside there as a copy before starting fresh. Delete does not remove Entries from these copies. On iPad, you can export a safety copy from Settings, then Your Entries.</li>
+<li><span class="device">iPhone:</span> you can share a Painting with the share sheet. Only the picture goes, and only where you send it.</li>
+</ul>
+
+<h2>Paintings, and the services that make them</h2>
+<p>A Painting is made by an outside image service, using your own key for that service. Nothing is sent to any of them until you add a key.</p>
+<table>
+<tr><th>Service</th><th>Where it is offered</th><th>Address Heartbridge sends to</th></tr>
+<tr><td>OpenAI</td><td>Mac, iPhone and iPad</td><td>api.openai.com</td></tr>
+<tr><td>Google (Gemini)</td><td>Mac and iPad</td><td>generativelanguage.googleapis.com</td></tr>
+<tr><td>xAI (Grok)</td><td>Mac and iPad</td><td>api.x.ai</td></tr>
+</table>
+<p>On iPhone, OpenAI is the only painting service. On Mac and iPad, you choose one service at a time, and only that service receives your words.</p>
+
+<h3>When words are sent on iPhone</h3>
+<p>Help in the app says:</p>
 <div class="said">
 <p>With an OpenAI key, Create Painting, Repaint and Try Again send the Entry’s words to OpenAI. Paint Each Entry also sends them when you use Finish Entry. A Painting that was not sent can resume when Heartbridge opens again. Save and Check sends only the key to check access. Sample Paintings send nothing.</p>
 </div>
@@ -87,24 +110,60 @@
 <div class="said">
 <p>When this is on, Finish Entry sends the Entry’s words to OpenAI to make a Painting. Sample Paintings stay on this iPhone.</p>
 </div>
-<p>So words leave your iPhone only at these moments:</p>
+<p>So on iPhone, words leave only at these moments:</p>
 <ul>
 <li><strong>Finish Entry</strong>, when Paint Each Entry is on.</li>
 <li><strong>Create Painting</strong>, <strong>Repaint</strong> or <strong>Try Again</strong>, when you tap one of them.</li>
 <li><strong>When Heartbridge opens again</strong>, for a Painting you already asked for that had not yet been sent.</li>
 </ul>
-<p>What one Painting request carries: the whole Entry, word for word, inside Heartbridge’s painting instructions; the name of the painting model, the picture size and quality; and your key, so OpenAI knows the request is yours. It is sent over a secure (HTTPS) connection to OpenAI’s address, api.openai.com. It does not carry the Entry’s date, number or Room, or your name. Like any internet request, it also shows OpenAI your network address and the basic app and iPhone system details that iPhone adds.</p>
-<p>A request already on its way can finish while Heartbridge is closed. While it travels, its words wait in a temporary file on your iPhone, which is removed when the request ends. What comes back is a Painting, which is kept with the Entry on your iPhone. Heartbridge asks OpenAI for a wordless picture.</p>
-<p>OpenAI handles these requests under its own terms and data policies, including how long it keeps them. You can read them at <a href="https://openai.com/policies/">openai.com/policies</a>. Heartbridge sends Entry words to OpenAI only to make the Painting you asked for. Because the key is yours, the requests belong to your OpenAI account.</p>
 
-<h2>Your OpenAI key</h2>
+<h3>When words are sent on Mac and iPad</h3>
+<p>Painting starts off. It is one switch, <strong>Create a Painting for each finished Entry</strong>, on The Painting page in Settings. It turns on when you turn it on, or when Save and Check confirms a new key. While it is on, words leave only at these moments:</p>
 <ul>
-<li>Save and Check sends your key to OpenAI to check that it works. It sends no Entry words and does not turn on Paint Each Entry.</li>
-<li>Your key is kept in this iPhone’s Keychain. It is not synced to iCloud Keychain and does not move to a new iPhone.</li>
-<li>Remove Key deletes it from the Keychain and stops new requests with that key. It cannot recall a request already sent.</li>
+<li><strong>Finish Entry</strong>.</li>
+<li><span class="device">Mac:</span> <strong>Repaint</strong>, <strong>Try Again</strong> or <strong>Paint One Now</strong>, when you choose one of them.</li>
+<li><span class="device">iPad:</span> <strong>Create Painting</strong> or <strong>Repaint</strong>, when you choose one of them.</li>
+</ul>
+<p>While painting is off, none of these send anything. A request that was interrupted is never sent again by itself.</p>
+
+<h3>What one Painting request carries</h3>
+<p><span class="device">iPhone:</span> the Entry (a shortened copy if it is very long), word for word, inside Heartbridge’s painting instructions; the name of the painting model, the picture size and quality; and your key, so OpenAI knows the request is yours.</p>
+<p><span class="device">Mac and iPad:</span> the Entry’s words, inside tags that mark them as the Entry; your saved painting instructions, if you wrote any; your choice of people in the Painting, if you made one; the name of the painting model and the picture shape and size; and your key. On Mac, when Dynamic Painting is on, the request also carries Heartbridge’s own painting brief. On iPad, most requests carry the painting brief; xAI uses a short brief or none when more space is needed for the Entry.</p>
+<p>On Mac and iPad, an Entry longer than the service takes is sent as a shortened copy. The complete request is limited to 1,024 characters for xAI. On iPad, the limits are 30,000 characters for OpenAI and 60,000 for Google. On Mac with Dynamic Painting on, those limits are also 30,000 and 60,000. With Dynamic Painting off, the Mac uses at most 3,500 characters of the Entry for OpenAI or Google. Your stored Entry is not changed.</p>
+<p><span class="device">iPhone:</span> Heartbridge sends OpenAI at most about 30,000 characters in all, many times more than an ordinary Entry. A very long Entry is sent as a shortened copy that keeps its opening and its close. Your stored Entry is never changed.</p>
+<p>On every device, a request goes over a secure (HTTPS) connection to the address in the table above. It does not carry the Entry’s date, number or Room, or your name. Like any internet request, it also shows the service your network address and the basic app and system details that your device adds. Heartbridge asks for a wordless picture. What comes back is a Painting, which is kept with the Entry on your device.</p>
+<p>If xAI answers with a link instead of a picture, Heartbridge fetches the picture from an x.ai address. That second request carries no words and no key.</p>
+<p><span class="device">iPhone:</span> a request already on its way can finish while Heartbridge is closed. While it travels, its words wait in a temporary file on your iPhone, which is removed when the request ends.</p>
+<p><span class="device">Mac and iPad:</span> requests keep no cookies and no saved copy of the reply beyond the Painting itself.</p>
+
+<h3>The services’ own rules</h3>
+<p>Each service handles these requests under its own terms and data policies, including how long it keeps them and whether people there may review them. Some services treat free and paid accounts differently. Because the key is yours, the requests belong to your account with that service. Heartbridge sends Entry words only to make the Painting you asked for.</p>
+<ul>
+<li>OpenAI: <a href="https://openai.com/policies/">openai.com/policies</a></li>
+<li>Google: <a href="https://ai.google.dev/gemini-api/terms">ai.google.dev/gemini-api/terms</a></li>
+<li>xAI: <a href="https://x.ai/legal">x.ai/legal</a></li>
 </ul>
 
-<h2>Widgets, the Lock Screen and Your Hour</h2>
+<h2>Your painting key</h2>
+<ul>
+<li>Save and Check sends your key to the service you chose, to check that it works. It sends no Entry words.</li>
+<li><span class="device">iPhone:</span> Save and Check does not turn on Paint Each Entry. <span class="device">Mac and iPad:</span> when the check passes, painting turns on.</li>
+<li>Your key is kept in the device’s Keychain. It is not synced to iCloud Keychain.</li>
+<li><span class="device">iPhone:</span> the key does not move to a new iPhone. <span class="device">iPad:</span> the key can be included in an encrypted device backup. Heartbridge’s own Back Up never includes it. <span class="device">Mac:</span> the key is kept for this Mac only. If macOS cannot give Heartbridge that kind of Keychain, the key goes in your login keychain instead, which can move to a new Mac with the rest of your login keychain, for example through Migration Assistant.</li>
+<li>Remove Key (iPhone) or Forget Key (Mac and iPad) deletes it from the Keychain and stops new requests with that key. It cannot recall a request already sent. On Mac and iPad, it also turns painting off.</li>
+<li>Backups made with Heartbridge never include your key.</li>
+</ul>
+
+<h2>Music on Mac and iPad</h2>
+<p>Music is optional, and nothing plays until you choose Play. Heartbridge on iPhone has no music of its own; you can play music from any other app.</p>
+<ul>
+<li><strong>Songs from your Mac or from Files:</strong> Heartbridge keeps a link to the file, not a copy. Nothing is sent anywhere.</li>
+<li><strong>YouTube:</strong> when you play a YouTube link, a small YouTube player loads from YouTube: youtube-nocookie.com (YouTube’s privacy-enhanced address) for videos and playlists, and youtube.com for its player code, and for channel pages on Mac. YouTube then receives the video or page you play and your network address, and its player may gather more, under Google’s privacy policy (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). A video may carry YouTube’s own ads. On Mac and iPad, the player keeps YouTube’s website data, such as cookies, between sessions.</li>
+<li><strong>Apple Music:</strong> Connect asks for your permission first. Searching and playing then go through Apple Music, under Apple’s terms, using your own subscription.</li>
+<li>Your Music shelf (names, links and Apple Music song numbers) is kept in Heartbridge’s folder on your device.</li>
+</ul>
+
+<h2>Widgets, the Lock Screen and Your Hour (iPhone)</h2>
 <ul>
 <li>Widgets receive the newest wordless Painting, kept days and Room colors. They receive no Entry words.</li>
 <li>While a Painting develops and you are away from the app, the Lock Screen and Dynamic Island may show it developing in the Room’s colors. They show no words.</li>
@@ -112,26 +171,66 @@
 </ul>
 
 <h2>No advertising, no tracking</h2>
-<p>Heartbridge has no advertising, no analytics and no tracking. It does not share data with data brokers and does not follow you across other apps or websites.</p>
-<p>Apple may pass crash reports to the maker if you have chosen to share analytics with app developers in your iPhone’s settings. Those come from Apple, not from Heartbridge. In TestFlight, feedback you choose to send goes through Apple with anything you attach, such as a screenshot.</p>
+<p>Heartbridge has no advertising of its own, no analytics and no tracking. It does not share data with data brokers and does not follow you across other apps or websites. The only ads you might see are YouTube’s own, inside a YouTube video you chose to play.</p>
+<p>Apple may pass crash reports to the maker if you have chosen to share analytics with app developers in your device’s settings. Those come from Apple, not from Heartbridge. In TestFlight, feedback you choose to send goes through Apple with anything you attach, such as a screenshot.</p>
 
 <h2>Keeping, stopping and removing</h2>
 <ul>
-<li>Entries and Paintings stay on your iPhone until you delete them. Delete removes an Entry from this app after the change is saved. It does not remove copies from earlier iPhone backups or a request already sent to OpenAI.</li>
-<li>To stop sending words, turn off Paint Each Entry, or use Remove Key to stop all Painting requests.</li>
-<li>Deleting Heartbridge from your iPhone removes its folder. Use Remove Key first to be sure the key is gone as well.</li>
-<li>For requests already sent to OpenAI, use your OpenAI account and OpenAI’s policies.</li>
+<li>Entries and Paintings stay on your device until you delete them.</li>
+<li>Delete removes an Entry and its Painting from Heartbridge on that device. It does not remove copies in backups of your device, in exports or backups you made, in the safety copies Restore keeps on Mac and iPad, or in a request already sent to a painting service.</li>
+<li>To stop sending words, turn painting off (Paint Each Entry on iPhone), or remove your key to stop all Painting requests.</li>
+<li><span class="device">iPhone and iPad:</span> deleting Heartbridge removes its folder. Use Remove Key or Forget Key first to be sure the key is gone as well.</li>
+<li><span class="device">Mac:</span> moving Heartbridge to the Trash does not remove its folder. Use Forget Key, then delete the folder that Reveal in Finder shows.</li>
+<li>For requests already sent to a painting service, use your account with that service and its policies.</li>
 </ul>
 
-<h2>Sample Paintings</h2>
-<p>A preview of Heartbridge may open with sample Entries and sample Paintings. They are kept on your iPhone. Nothing is sent anywhere to make them.</p>
+<h2>Sample Paintings (iPhone)</h2>
+<p>A preview of Heartbridge on iPhone may open with sample Entries and sample Paintings. They are kept on your iPhone. Nothing is sent anywhere to make them.</p>
+
+<h2>The iPhone app, in its own words</h2>
+<p>These are the words of the Privacy page inside Heartbridge on iPhone (Settings, then Help, then Privacy):</p>
+<div class="said">
+<p>Your Entries, Draft and Paintings stay in Heartbridge’s folder on this iPhone. They can be included in the iPhone’s backup. Heartbridge does not add its own encryption to these files.</p>
+<p>When you choose Create Painting, Repaint or Try Again with an OpenAI key, the Entry’s words are sent to OpenAI. Paint Each Entry also sends them when you use Finish Entry. A Painting that was not sent can resume when Heartbridge opens again. A very long Entry may be shortened before it is sent to OpenAI. Your Entry stays unchanged. OpenAI handles these requests under its own terms and data policies.</p>
+<p>Save and Check sends your key to OpenAI to check access. It sends no Entry words. Your key is kept in this iPhone’s Keychain. Remove Key stops new requests with that key; it cannot recall a request already sent.</p>
+<p>Widgets receive the newest wordless Painting, kept days and Room colors. They receive no Entry words. Your Hour uses a local notification and contains no Entry words.</p>
+<p>Heartbridge has no advertising or tracking. Delete removes an Entry from this app after the change is saved. It does not remove copies from earlier iPhone backups or a request already sent to OpenAI.</p>
+</div>
+
+<h2>Mac data practices</h2>
+<p>The Mac app uses these data practices. The in-app Privacy page is being added in a later beta.</p>
+<div class="said">
+<p>Your Entries, Drafts and Paintings stay in Heartbridge’s folder on this Mac. They can be included in the Mac’s backups, such as Time Machine. Heartbridge does not add its own encryption to these files.</p>
+<p>Painting uses the one service you choose: OpenAI, Google or xAI. When Painting is on, Finish Entry sends the Entry’s words to that service to make a Painting. Repaint, Try Again and Paint One Now also send them. With the words go your saved Painting Instruction Prompt and your choice of People in the painting, and, when Dynamic Painting is on, Heartbridge’s painting brief. A long Entry may be sent as a shortened copy; your Entry stays unchanged. A request that was interrupted is never sent again by itself. The service handles these requests under its own terms and data policies.</p>
+<p>Save and Check sends your key to that service to check access. It sends no Entry words. When the check passes, Painting turns on. Your key is kept in this Mac’s Keychain. If macOS refuses Heartbridge its own Keychain, the key goes in your login keychain, which can move to a new Mac. Forget key stops new requests with that key and turns Painting off; it cannot recall a request already sent.</p>
+<p>Music sends nothing until you choose Play. Songs from this Mac are not sent anywhere. YouTube links play in YouTube’s own player, under Google’s privacy policy; it keeps YouTube’s cookies between sessions, and a video may carry YouTube’s ads. Apple Music plays with your own subscription, under Apple’s terms.</p>
+<p>Heartbridge has no advertising or tracking of its own. Delete removes an Entry and its Painting from this app after the change is saved. It does not remove copies from earlier Mac backups, your exports and backups, the safety copies Restore keeps, or a request already sent to a painting service.</p>
+</div>
+
+<h2>The iPad app, in its own words</h2>
+<p>These are the words of the Privacy page inside Heartbridge on iPad (Settings, then Privacy):</p>
+<div class="said">
+<p>Your Entries, Drafts and Paintings stay in Heartbridge’s folder on this iPad. They can be included in the iPad’s backup. Heartbridge does not add its own encryption to these files.</p>
+<p>When Painting is on, Finish Entry sends the Entry’s words to the painting service you choose: OpenAI, Google or xAI. Create Painting and Repaint also send them. Your saved painting instructions, your people choice and Heartbridge’s painting brief go with them. The brief is fixed painting directions; xAI gets a short one, or none when the Entry needs the room. Every request asks for a picture with no words in it. A request holds at most 30,000 characters for OpenAI, 60,000 for Google and 1,024 for xAI. A longer Entry is sent as a shortened copy, most often its opening and closing sentences; your stored Entry is not changed. A request that was interrupted is never sent again by itself. The service handles these requests under its own terms and data policies.</p>
+<p>Save and Check sends your key to the service you chose to check access. It sends no Entry words. When Save and Check passes, Painting turns on. Your key is kept in this iPad’s Keychain and can be included in an encrypted iPad backup. Heartbridge’s own Back Up never includes it. Forget Key stops new requests with that key and turns Painting off; it cannot recall a request already sent.</p>
+<p>YouTube links play in YouTube’s own player, under Google’s privacy policy. The player keeps YouTube’s website data, such as cookies, between sessions. A video may carry YouTube’s ads. Apple Music asks your permission first, then plays through your own subscription under Apple’s terms. Songs from Files stay in Files.</p>
+<p>Heartbridge has no advertising or tracking of its own. Delete removes an Entry from this app after the change is saved. It does not remove copies from earlier iPad backups, your exports and backups, the journals and copies Restore keeps, or a request already sent to a painting service. Restore leaves the earlier journal on this iPad, and keeps a recovery copy when it can.</p>
+</div>
+<p>Beside Save and Check, on The Painting page in Settings, the iPad app says this, with the name of the service you chose in place of OpenAI:</p>
+<div class="said">
+<p>When Save and Check passes, Painting turns on. Finish Entry then sends the Entry’s words to OpenAI to make a Painting, with your saved instructions, people choice and, for most requests, Heartbridge’s painting brief.</p>
+</div>
+
+
+<h2>The shared mobile app</h2>
+<p>The shared mobile package uses the iPhone Room on iPhone and the iPad Room on iPad. It keeps the storage and Painting behavior described for that device. The iPad Write control opens the Room and receives no Entry words. Existing iPad app backups can be restored into the new app. This transfer does not move provider keys; enter them again if you want Painting. One TestFlight invitation or one App Store purchase does not sync Entries between devices.</p>
 
 <h2>Changes</h2>
-<p>If what Heartbridge keeps or sends changes, this page and the Privacy page inside the app will change with it, and the date at the top will move.</p>
+<p>If what Heartbridge keeps or sends changes on any device, this page and the privacy words inside the app will change with it, and the date at the top will move.</p>
 
 <hr>
 <footer>
-<p>Questions about this policy: use Send Beta Feedback in TestFlight, or the Support link on Heartbridge’s App Store page.</p>
+<p>Questions about this policy: email <a href="mailto:posey_joseph@hotmail.com">posey_joseph@hotmail.com</a>, or use Send Beta Feedback in TestFlight.</p>
 </footer>
 </main>
 </body>
